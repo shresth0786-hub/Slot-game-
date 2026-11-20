@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Slot Game - WebGL Build</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { margin:0; background:#1a1a2e; color:#fff; font-family:Arial, sans-serif; display:flex; flex-direction:column; align-items:center; justify-content:center; min-height:100vh; }
+    #unity-container { text-align:center; max-width:960px; width:100%; }
+    .card { background:#16213e; border-radius:16px; padding:32px; box-shadow:0 8px 32px rgba(0,0,0,0.4); }
+    h1 { color:#e94560; }
+    .btn { display:inline-block; margin-top:20px; padding:12px 24px; background:#e94560; color:#fff; border-radius:8px; text-decoration:none; font-weight:bold; }
+    .placeholder { margin:20px auto; width:960px; max-width:100%; height:540px; background:#0f3460; border-radius:12px; display:flex; align-items:center; justify-content:center; border:2px dashed #e94560; }
+    code { background:#0f3460; padding:2px 6px; border-radius:4px; }
+  </style>
+</head>
+<body>
+  <div id="unity-container">
+    <div class="card">
+      <h1>🎰 Slot Game - WebGL Build</h1>
+      <p>This is a placeholder WebGL build folder.</p>
+      <p>To generate the actual WebGL build:</p>
+      <ol style="text-align:left; max-width:600px; margin:20px auto;">
+        <li>Open project in Unity 2022.3 LTS</li>
+        <li>File &gt; Build Settings &gt; Select <code>WebGL</code> &gt; Switch Platform</li>
+        <li>Click <code>Build</code> and choose <code>Build/WebGL</code></li>
+        <li>Commit the generated files (Build folder, wasm, js, data)</li>
+      </ol>
+      <div class="placeholder">
+        <span>Unity WebGL Canvas (960x600) - Build Output Will Appear Here</span>
+      </div>
+      <p>Current build: <strong>v1.0</strong> - Includes reels, RNG, paytable, bonus features.</p>
+      <a class="btn" href="../../README.md">View README</a>
+    </div>
+  </div>
+</body>
+</html>
