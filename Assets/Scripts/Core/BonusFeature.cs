@@ -1,4 +1,6 @@
 using UnityEngine;
+// ParticleSystem lives in UnityEngine.ParticleSystemModule (com.unity.modules.particlesystem).
+// Manifest now explicitly references that module; fully-qualified type used for robustness.
 
 namespace SlotGame.Core
 {
@@ -23,8 +25,8 @@ namespace SlotGame.Core
         public int freeSpinsAwarded = 3;
 
         [Header("Events")]
-        public ParticleSystem winParticles;
-        public ParticleSystem jackpotParticles;
+        public UnityEngine.ParticleSystem winParticles;
+        public UnityEngine.ParticleSystem jackpotParticles;
 
         private SlotMachine slotMachine;
 

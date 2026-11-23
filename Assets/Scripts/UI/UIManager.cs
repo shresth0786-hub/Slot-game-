@@ -2,6 +2,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using SlotGame.Core;
+// SlotMachine lives in SlotGame.Core; explicit using ensures resolution
+// regardless of assembly definition setup.
 
 namespace SlotGame.UI
 {
@@ -12,7 +14,7 @@ namespace SlotGame.UI
     public class UIManager : MonoBehaviour
     {
         [Header("References")]
-        [SerializeField] private SlotMachine slotMachine;
+        [SerializeField] private SlotGame.Core.SlotMachine slotMachine;
         [SerializeField] private TextMeshProUGUI creditsText;
         [SerializeField] private TextMeshProUGUI betText;
         [SerializeField] private TextMeshProUGUI winText;
@@ -31,7 +33,7 @@ namespace SlotGame.UI
 
         private void Awake()
         {
-            if (slotMachine == null) slotMachine = FindObjectOfType<SlotMachine>();
+            if (slotMachine == null) slotMachine = FindObjectOfType<SlotGame.Core.SlotMachine>();
             currentBet = slotMachine != null ? slotMachine.CurrentBet : 10;
         }
 
